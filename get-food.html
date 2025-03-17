@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taa'wun - Get Food</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Taa'wun</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="get-food.html">Get Food</a></li>
+        <li><a href="chat-ai.html">Chat with AI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="get-food">
+    <h2>Get Your Meal</h2>
+    <p>Search for food by type or location.</p>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search for food (e.g., halal, vegetarian)">
+      <button class="btn">Search</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <label for="food-type">Food Type:</label>
+      <select id="food-type">
+        <option value="halal">Halal</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten-free">Gluten-Free</option>
+      </select>
+
+      <label for="distance">Distance:</label>
+      <select id="distance">
+        <option value="5">Within 5 km</option>
+        <option value="10">Within 10 km</option>
+        <option value="20">Within 20 km</option>
+      </select>
+    </div>
+
+    <!-- Map View -->
+    <div class="map-view">
+      <h3>Map View</h3>
+      <div id="map" style="height: 400px; width: 100%; border-radius: 5px;"></div>
+    </div>
+
+    <!-- Request Food -->
+    <div class="request-food">
+      <h3>Get Your Meal</h3>
+      <p>Notify donors of your interest in this food item and make a positive impact today.</p>
+      <button class="btn">Request This Food</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="newsletter">
+        <h3>Subscribe to our newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-links">
+        <div class="column">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">User Guides</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Plans & Pricing</h4>
+          <ul>
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">Startup</a></li>
+            <li><a href="#">Organization</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Taa'wun. All rights reserved. • <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Sitemap</a></p>
+    </div>
+  </footer>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>
