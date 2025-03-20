@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const UserRoutes=require('./routes/userRoutes');
 const donateRoute = require("./routes/donateRoute");
+const requestRoute=require('./routes/requestRoute');
 const port=3000;
 
 app.use(express.json());
@@ -22,6 +23,7 @@ app.listen(port,()=>{
 // Use routes
 app.use(UserRoutes);
 app.use(donateRoute);
+app.use(requestRoute);
 app.get("/test", (req, res) => {
     console.log("✅ Server is working!");
     res.send("API is working!");

@@ -23,7 +23,7 @@ role: {
      
 donations: [{
          type: mongoose.Schema.Types.ObjectId,
-          ref: "donate"
+          ref: "Donate"
          }], 
          
 requests: [{

@@ -11,10 +11,6 @@ const createToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
 };
 
-
-
-
-
 //handling errors func
 const handling=(err)=>{
     console.log(err.message,err.code);
