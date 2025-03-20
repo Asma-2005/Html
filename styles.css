@@ -215,11 +215,11 @@ footer {
   animation: fadeIn 1s ease-in-out forwards;
 }
 
-.slide-in-right {
+/* .slide-in-right {
   opacity: 0;
   transform: translateX(100%);
-  animation: slideInRight 1s ease-in-out forwards;
-}
+  animation: slideInRight ;
+} */
 
 /* General Styles */
 body {
@@ -326,6 +326,7 @@ header nav ul li a:hover {
   margin-bottom: 2rem;
 }
 
+
 .request-food .btn {
   padding: 0.8rem 1.5rem;
   background-color: #4CAF50; /* Green */
@@ -405,4 +406,81 @@ footer {
 
 .footer-bottom p {
   margin: 0;
+}
+
+
+#donate-form {
+  display: block;
+  visibility: visible;
+}
+.donate {
+  display: block;
+  visibility: visible;
+}
+
+#chat-container {
+  height: 500px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#input-container {
+  display: flex;
+  gap: 10px;
+}
+
+#message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#send-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #45a049;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: #e6f7ff;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+}
+
+.image-upload {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#loading {
+  display: none;
+  margin-left: 10px;
+}
+
+#image-preview {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 10px;
+  display: none;
 }

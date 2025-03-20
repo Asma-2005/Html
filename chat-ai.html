@@ -21,13 +21,17 @@
   </header>
 
   <section class="chat-ai">
-    <h2>Chat with AI</h2>
-    <p>Get instant help with food safety and donation tips.</p>
-    
-    <div id="chat-box" class="fade-in">
-      <!-- AI chat integration here -->
-      <p>Chat feature coming soon!</p>
+    <h1>AI Chatbot</h1>
+    <div id="chat-container"></div>
+    <div id="input-container">
+        <input type="text" id="message-input" placeholder="Type your message here...">
+        <button id="send-button">Send</button>
     </div>
+    <div class="image-upload">
+        <input type="file" id="image-input" accept="image/*">
+        <span id="loading">Loading...</span>
+    </div>
+    <img id="image-preview" src="" alt="Preview">
   </section>
 
   <footer>
@@ -76,5 +80,6 @@
       <p>&copy; 2024 Taa'wun. All rights reserved. • <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Sitemap</a></p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
